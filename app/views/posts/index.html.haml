@@ -1,12 +1,7 @@
-=render "navigation"
-.container
-  .row
-    .col-md-6
-      = link_to do
-        =image_tag asset_path("nyjDroDB_400x400.jpg",class:"img-fluid")
-    .col-md-6
-      %h1 sampletext
-      %p 
-        samplet extsampletextsam pletextsampletextsamplete xtsampl etextsa mpletextsamplet
-        exts amplet extsamp lete xtsam p letext sampl ete xtsamp letextsample text sam plet ext
-        sa mp l etext sa mp let exts amplete xtsample textsa mplet extsam ple text
+.wrapper
+  =render "navigation"
+  =render "big_image"
+  =render "card"
+  =render "two_column"
+  =render "three_column"
+  =render "footer"
