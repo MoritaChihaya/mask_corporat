@@ -1,0 +1,21 @@
+#carouselExampleIndicators.carousel.slide.img-hidden{"data-ride" => "carousel"}
+  -#総画像枚数がいくつで、現在何枚目の画像が表示されているかという部分を読み取り、表示させるためのコード
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleIndicators"}
+    %li{"data-slide-to" => "1", "data-target" => "#carouselExampleIndicators"}
+    %li{"data-slide-to" => "2", "data-target" => "#carouselExampleIndicators"}
+  .carousel-inner
+    .carousel-item.active
+      -#"d-block.w-100"→画像をblock要素にし、幅を100%に指定する／activeは現在表示させる意味
+      =image_tag asset_path('big_image_01.jpg',  class:"d-block.w-100")
+    .carousel-item
+      =image_tag asset_path('big_image_01.jpg',  class:"d-block.w-100")
+    .carousel-item
+      =image_tag asset_path('big_image_01.jpg',  class:"d-block.w-100")
+  -#前後のｎ画像に移動するためのボタン部分
+  %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleIndicators", :role => "button"}
+    %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+    %span.sr-only Previous
+  %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleIndicators", :role => "button"}
+    %span.carousel-control-next-icon{"aria-hidden" => "true"}
+    %span.sr-only Next
