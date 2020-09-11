@@ -1,4 +1,11 @@
 
+.navbar-brand{
+  img{
+    /*ヘッダーアイコンの画像*/
+    height: 40px;
+  }
+}
+
 .img-hidden {
   height: 400px;
   overflow: hidden;
@@ -19,4 +26,22 @@
   background-color: #434a40;
   color: #fff;
   text-align: center;
+}
+
+/*ページtopへのボタン*/
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  font-size: 3rem;
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+}
+#page_top a:hover {
+  background-color: #666;
+  text-decoration: none;
 }

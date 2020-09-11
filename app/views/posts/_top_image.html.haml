@@ -7,11 +7,11 @@
   .carousel-inner
     .carousel-item.active
       -#"d-block.w-100"→画像をblock要素にし、幅を100%に指定する／activeは現在表示させる意味
-      =image_tag asset_path('big_image_01.jpg',  class:"d-block.w-100")
+      =image_tag 'big_image_01.jpg', class:"d-block.w-100 lozad"
     .carousel-item
-      =image_tag asset_path('big_image_01.jpg',  class:"d-block.w-100")
+      =image_tag 'big_image_01.jpg', class:"d-block.w-100 lozad"
     .carousel-item
-      =image_tag asset_path('big_image_01.jpg',  class:"d-block.w-100")
+      =image_tag 'big_image_01.jpg', class:"d-block.w-100 lozad"
   -#前後のｎ画像に移動するためのボタン部分
   %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleIndicators", :role => "button"}
     %span.carousel-control-prev-icon{"aria-hidden" => "true"}
