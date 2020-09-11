@@ -1,0 +1,355 @@
+%body.vsc-initialized
+  / skrollr-body
+  #skrollr-body
+    / 191212 이벤트 추가
+    .pbanner
+      .swiper-container5.swiper-container-vertical.swiper-container-ios
+        .swiper-wrapper{:style => "transform: translate3d(0px, -270px, 0px); transition-duration: 0ms;"}
+          .swiper-slide.box1.swiper-slide-duplicate.swiper-slide-duplicate-active{"data-swiper-slide-index" => "2", :style => "height: 90px;"}
+            %a.goshop{:href => "https://smartstore.naver.com/etiqa", :target => "_blank"}
+              %img{:alt => "", :height => "37", :src => "img/common/img_pbanner13.png", :width => "281"}/
+          .swiper-slide.box2.swiper-slide-duplicate-next{"data-swiper-slide-index" => "0", :style => "height: 90px;"}
+            %a.goshop{:href => "https://smartstore.naver.com/etiqa", :target => "_blank"}
+              %img{:alt => "", :height => "36", :src => "img/common/img_pbanner20.jpg", :width => "265"}/
+          .swiper-slide.box2.swiper-slide-prev{"data-swiper-slide-index" => "1", :style => "height: 90px;"}
+            %a.goshop{:href => "https://smartstore.naver.com/etiqa", :target => "_blank"}
+              %img{:alt => "", :height => "36", :src => "img/common/img_pbanner18.png", :width => "255"}/
+          .swiper-slide.box1.swiper-slide-active{"data-swiper-slide-index" => "2", :style => "height: 90px;"}
+            %a.goshop{:href => "https://smartstore.naver.com/etiqa", :target => "_blank"}
+              %img{:alt => "", :height => "37", :src => "img/common/img_pbanner13.png", :width => "281"}/
+          .swiper-slide.box2.swiper-slide-duplicate.swiper-slide-next{"data-swiper-slide-index" => "0", :style => "height: 90px;"}
+            %a.goshop{:href => "https://smartstore.naver.com/etiqa", :target => "_blank"}
+              %img{:alt => "", :height => "36", :src => "img/common/img_pbanner20.jpg", :width => "265"}/
+        %span.swiper-notification{"aria-atomic" => "true", "aria-live" => "assertive"}
+      %a.pclose{:href => "javascript:void(0);"}
+        %img{:alt => "", :height => "30", :src => "img/common/btn_pbannerclose3.png", :width => "30"}/
+    / //191212 이벤트 추가
+    / wrap
+    #wrap.main2
+      / header
+      %header#header.skrollable.skrollable-after{"data-170-start" => "", "data-start" => ""}
+        / 191108 수정 data-170-start="" 이 부분이 추후에는 data-100-start="" 으로 변경되어야 함
+        .first
+          .main
+            %h1.logo
+              %a{:href => "index.html"}
+                %em.blind ETIQA
+            %a.menu{:href => "javascript:void(0)"}
+              %em.blind 메뉴
+        .sec
+          .logo
+            %a{:href => "index.html"}
+              %em.blind ETIQA
+          %a.menu{:href => "javascript:void(0)"}
+            %em.blind 메뉴
+      / //header
+      / container
+      %section#container
+        / contents
+        .contents
+          .sc.soft_mask
+            %a.thumb.type2.skrollable.skrollable-between{"data-bottom" => "", "data-top-bottom" => "", :href => "product_soft.html", :style => ""}
+              %img{:alt => "", :height => "", :src => "img/main/bg_sc12.jpg", :width => "100%"}/
+              %h3 ETIQA SOFT FIT MASK
+            %a.btn{:href => "https://smartstore.naver.com/etiqa/products/5016144825", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          / 200618 추가 시작
+          .sc.inner_mask
+            %a.thumb.type2.skrollable.skrollable-between{"data-bottom" => "", "data-top-bottom" => "", :href => "product_inner.html", :style => ""}
+              %img{:alt => "", :height => "", :src => "img/main/bg_sc11.jpg", :width => "100%"}/
+              %h3 ETIQA INNER MASK
+            %a.btn{:href => "https://smartstore.naver.com/etiqa", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          / //200618 추가 끝
+          / 200430 추가 시작
+          .sc.sanitizer
+            %a.thumb.type2.skrollable.skrollable-between{"data-bottom" => "", "data-top-bottom" => "", :href => "product_sanitizer.html", :style => ""}
+              %img{:alt => "", :height => "", :src => "img/main/bg_sc10.png", :width => "100%"}/
+              %h3
+                ETIQA PURE HAND
+                %br>/
+                SANITIZER GEL
+            %a.btn{:href => "https://smartstore.naver.com/etiqa/products/4918530632", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          / //200430 추가 끝
+          / 191217 해당 위치로 코드 이동 시작
+          .sc.fashion
+            %a.thumb.skrollable.skrollable-between{"data-bottom" => "", "data-top-bottom" => "", :href => "product_style.html", :style => ""}
+              .vsc-controller{"data-vscid" => "vtsbk1dfp"}
+              %video{"data-vscid" => "vtsbk1dfp", :loop => "", :muted => "", :playsinline => "", :poster => "../movie/mov_m3_wide.png"}
+                %source{:src => "../movie/mov_m3_wide.mp4", :type => "video/mp4"}
+              %h3
+                ETIQA STYLE MASK
+                %br>/
+                Be Create Your Area
+            %a.btn{:href => "https://smartstore.naver.com/etiqa/category/24651650d6a143d29457b7d234e4b4ec?cp=1", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          / //191217 해당 위치로 코드 이동 끝
+          / 191220 추가 시작
+          .sc.cotton
+            %a.thumb.type2.skrollable.skrollable-between{"data-bottom" => "", "data-top-bottom" => "", :href => "product_cotton.html", :style => ""}
+              %img{:alt => "", :height => "", :src => "img/main/bg_sc9.png", :width => "100%"}/
+              %h3
+                ETIQA AIRWAY MASK
+                %br>/
+                Cotton Basic
+            %a.btn{:href => "https://smartstore.naver.com/etiqa", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          / //191220 추가 끝
+          .sc.airway
+            %a.thumb.skrollable.skrollable-before{"data-bottom" => "", "data-top-bottom" => "", :href => "product_airway.html", :style => ""}
+              .vsc-controller{"data-vscid" => "hwb79agr8"}
+              %video{"data-vscid" => "hwb79agr8", :loop => "", :muted => "", :playsinline => "", :poster => "../movie/mov_m2_wide.png"}
+                %source{:src => "../movie/mov_m2_wide.mp4", :type => "video/mp4"}
+              %h3
+                ETIQA AIRWAY MASK
+                %br>/
+                Advance / Progressive / Be natural
+            %a.btn{:href => "https://smartstore.naver.com/etiqa", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          .sc.basic
+            %a.thumb.skrollable.skrollable-before{"data-bottom" => "", "data-top-bottom" => "", :href => "product_basic.html", :style => ""}
+              .vsc-controller{"data-vscid" => "jqnteok4m"}
+              %video{"data-vscid" => "jqnteok4m", :loop => "", :muted => "", :playsinline => "", :poster => "../movie/mov_m1_wide.png"}
+                %source{:src => "../movie/mov_m1_wide.mp4", :type => "video/mp4"}
+              %h3
+                ETIQA BASIC MASK
+                %br>/
+                Comfortable Breathing Ware
+            %a.btn{:href => "https://smartstore.naver.com/etiqa/products/5067395279", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          / 191024_3 추가
+          .sc.kids
+            %a.thumb.type2.skrollable.skrollable-before{"data-bottom" => "", "data-top-bottom" => "", :href => "product_kids.html", :style => ""}
+              %img{:alt => "", :height => "", :src => "img/main/bg_sc8.png", :width => "100%"}/
+              %h3
+                ETIQA AIRWAY MASK
+                %br>/
+                Kids
+            %a.btn{:href => "https://smartstore.naver.com/etiqa", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+          / //191024_3 추가
+          /
+            191217 해당 위치에서 삭제 시작 (코드 최상단으로 이동)div class="sc fashion">
+            <a href="product_style.html" class="thumb" data-bottom="" data-top-bottom="">
+            <video poster="../movie/mov_m3_wide.png" loop muted playsinline><source src="../movie/mov_m3_wide.mp4" type="video/mp4"></video>
+            <h3>ETIQA STYLE MASK<br>Be Create Your Area</h3>
+            </a>
+            <a class="btn disable">COMING SOON</a>
+            </div 191217 해당 위치에서 삭제 끝
+          %ul.box_menu
+            / 191220 추가 시작
+            /
+              li class="gray">
+              <a href="product_cotton.html">
+              <h3>ETIQA AIRWAY MASK<br>Cotton Basic</h3>
+              <img src="img/main/img_cotton.png" width="100%" height alt="ETIQA AIRWAY MASK Cotton Basic">
+              </a>
+              </li
+            / //191220 추가 끝 시작
+            %li.soft
+              %a{:href => "product_soft.html"}
+                %h3
+                  ETIQA SOFT FIT MASK
+                  %br>/
+                  GET READY FOR YOUR ACTIVITY
+                %img{:alt => "ETIQA SOFT FIT MASK GET READY FOR YOUR ACTIVITY", :height => "", :src => "img/main/img_soft.jpg", :width => "100%"}/
+            / 200618 추가
+            %li.inner
+              %a{:href => "product_inner.html"}
+                %h3 ETIQA INNER MASK
+                %img{:alt => "ETIQA INNER MASK", :height => "", :src => "img/main/img_inner.jpg", :width => "100%"}/
+            / //200618 추가 끝
+            / 200430 추가
+            %li.kids.gray
+              %a{:href => "product_sanitizer.html"}
+                %h3
+                  ETIQA PURE HAND
+                  %br>/
+                  SANITIZER GEL
+                %img{:alt => "ETIQA PURE HAND SANITIZER GEL", :height => "", :src => "img/main/img_sanitizer.png", :width => "100%"}/
+            / //200430 추가
+            %li
+              %a{:href => "product_airway.html"}
+                %h3
+                  ETIQA AIRWAY MASK
+                  %br>/
+                  Advance / Progressive / Be natural
+                %img{:alt => "ETIQA AIRWAY MASK_Advance / Progressive / Be natural", :height => "", :src => "img/main/img_airway.png", :width => "100%"}/
+            / 191024 추가
+            %li.kids.yellow
+              %a{:href => "product_kids.html"}
+                %h3
+                  ETIQA AIRWAY MASK
+                  %br>/
+                  KIDS
+                / 191024_3 수정
+                %img{:alt => "ETIQA AIRWAY MASK KIDS", :height => "", :src => "img/main/img_kids.png", :width => "100%"}/
+                / 191024_3 수정
+            / //191024 추가
+            %li
+              %a{:href => "product_basic.html"}
+                %h3
+                  ETIQA BASIC MASK
+                  %br>/
+                  Comfortable Breathing Ware
+                %img{:alt => "ETIQA BASIC MASK_Comfortable Breathing Ware", :height => "", :src => "img/main/img_basic.png", :width => "100%"}/
+            %li.black
+              %a{:href => "product_style.html"}
+                %h3
+                  ETIQA STYLE MASK
+                  %br>/
+                  BE CREATE YOUR AREA
+                / 191119 수정
+                %img{:alt => "ETIQA STYLE MASK_BE CREATE YOUR AREA", :height => "", :src => "img/main/img_fashion.png", :width => "100%"}/
+                / 191119 수정
+            %li.maskcase
+              %a.skrollable.skrollable-before{"data-center" => "", "data-top" => "", :href => "product_maskcase.html", :style => ""}
+                .vsc-controller{"data-vscid" => "ujumikwgi"}
+                %h3 ETIQA MASK CASE
+                %video{"data-vscid" => "ujumikwgi", :loop => "", :muted => "", :playsinline => "", :poster => "../movie/banner03.png"}
+                  %source{:src => "../movie/banner03.mp4", :type => "video/mp4"}
+            %li
+              %a{:href => "brand_story.html"}
+                %h3 ETIQA BRAND STORY
+                %img{:alt => "ETIQA BRAND STORY", :height => "", :src => "img/main/img_brandstory.png", :width => "100%"}/
+            %li.store
+              %a.skrollable.skrollable-before{"data-center" => "", "data-top" => "", :href => "https://smartstore.naver.com/etiqa", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-main'})", :style => "", :target => "_blank", :title => "WHERE TO BUY"}
+                .vsc-controller{"data-vscid" => "gsqyel8bl"}
+                %h3 ETIQA STORE
+                %video{"data-vscid" => "gsqyel8bl", :loop => "", :muted => "", :playsinline => "", :poster => "../movie/banner01.png"}
+                  %source{:src => "../movie/banner01.mp4", :type => "video/mp4"}
+            %li
+              %a
+                %h3 WE LOVE ETIQA
+                %img{:alt => "WE LOVE ETIQA", :height => "", :src => "img/main/img_welove.png", :width => "100%"}/
+        / //contents
+      / //container
+      / footer
+      %footer#footer
+        %ul.link
+          %li.more
+            %strong
+              %a{:href => "javascript:void(0);"} PRODUCT
+            %span.sub
+              %em
+                %a{:href => "product_basic.html"} BASIC
+              %em
+                %a{:href => "product_airway.html"} AIRWAY
+              %em
+                %a{:href => "product_cotton.html"} COTTON
+              / 191220 코튼 메뉴 추가 전체페이지 공통 반영되어야 함
+              %em
+                %a{:href => "product_kids.html"} KIDS
+              / 191024 추가
+              %em
+                %a{:href => "product_style.html"} STYLE
+              / 191119 수정
+              %em
+                %a{:href => "product_soft.html"} SOFT FIT
+              %em
+                %a{:href => "product_inner.html"} INNER
+              / 200618 추가
+              %em
+                %a{:href => "product_sanitizer.html"} SANITIZER
+              / 200430 추가
+              %em
+                %a{:href => "product_maskcase.html"} CASE
+              / 200618 수정
+          %li.more
+            %strong
+              %a{:href => "javascript:void(0);"} FEATURE
+            %span.sub
+              %em
+                %a{:href => "colla_mina.html"} SHIN MINA
+              %em
+                %a{:href => "colla_dami.html"} KIM DAMI
+          %li
+            %strong
+              %a{:href => "brand_story.html"} BRAND STORY
+          %li
+            %strong
+              %a{:href => "contact.html"} CONTACT
+          %li
+            %strong
+              %a{:href => "https://smartstore.naver.com/etiqa", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-basicmask'})", :target => "_blank"} ETIQA STORE
+        .others
+          %ul.sns
+            %li
+              %a{:href => "https://www.facebook.com/etiqaofficial", :target => "_blank", :title => "ETIQA facebook 새창에서 열기"} FACEBOOK.
+            %li
+              %a{:href => "https://www.instagram.com/etiqa_official/", :target => "_blank", :title => "ETIQA instagram 새창에서 열기"} INSTAGRAM.
+            %li
+              %a{:href => "https://www.youtube.com/channel/UCBHaI_X1nszRRTHr1EAGXcQ", :target => "_blank", :title => "ETIQA youtube 새창에서 열기"} YOUTUBE.
+            %li
+              %a{:href => "https://blog.naver.com/etiqa", :target => "_blank", :title => "ETIQA 네이버블로그 새창에서 열기"} BLOG.
+            %li
+              %a{:href => "https://post.naver.com/my.nhn?memberNo=45002477", :target => "_blank", :title => "ETIQA 네이버포스트 새창에서 열기"} POST.
+          .awa
+            %span.gda GERMAN DESIGN AWAARD 2020
+            %span.if IF DESIGN AWAARD 2020
+            %span.josun 조선일보 소비자추천 1위 브랜드
+          %p.copyright Copyright © 2019 Filt Corporation All rights reserved.
+      / //footer
+    / //wrap
+  / //skrollr-body
+  #ly_pop.ly_pop
+  .go_store.skrollable.skrollable-after{"data-100-start" => "", "data-start" => ""}
+    %a{:href => "https://smartstore.naver.com/etiqa", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'mobile-home'})", :target => "_blank"}
+      %em.blind 제품 구매하기
+  :javascript
+    // 스크롤시 발생하는 이벤트 스크립트
+    var boxDone = false,
+    boxa = $('.main2 .airway .thumb'),
+    boxb = $('.main2 .basic .thumb'),
+    boxc = $('.main2 .fashion  .thumb'),
+    boxd = $('.main2 .maskcase a'),
+    boxe = $('.main2 .air a'),
+    boxf = $('.main2 .store a');
+    skrollr.init({
+    	forceHeight: false,
+    	render: function() {
+    		if ( boxa.hasClass('skrollable-between') || boxb.hasClass('skrollable-between') || boxc.hasClass('skrollable-between')) {
+    			if ( ! boxDone ) {
+    				boxa.find('video')[0].play();
+    				boxb.find('video')[0].play();
+    				boxc.find('video')[0].play();
+    				boxDone = true;
+    			}
+    		}
+    		else if ( boxd.hasClass('skrollable-between') ) {
+    			if ( ! boxDone ) {
+    				boxd.find('video')[0].play();
+    				boxDone = true;
+    			}
+    		}
+    		else if ( boxe.hasClass('skrollable-between') ) {
+    			if ( ! boxDone ) {
+    				boxe.find('video')[0].play();
+    				boxDone = true;
+    			}
+    		}
+    		else if ( boxf.hasClass('skrollable-between') ) {
+    			if ( ! boxDone ) {
+    				boxf.find('video')[0].play();
+    				boxDone = true;
+    			}
+    		}
+    		else {			
+    			jQuery("video").each(function(){
+    				$(this)[0].pause();
+    			});
+    			boxDone = false;
+    		}
+    	}
+    });
+    //wow
+    var wow = new WOW();
+    wow.init();
+    
+    //191212 추가 시작 이벤트 종료 후 삭제
+    //스와이프
+    var swiper = new Swiper('.pbanner .swiper-container5', {
+    	autoplay: true, // 200129 삭제되어 있다면 다시 활성화
+     	speed: 300, // 200129 삭제되어 있다면 다시 활성화
+    	loop : true, // 200129 삭제되어 있다면 다시 활성화
+    	direction : 'vertical', // 200129 삭제되어 있다면 다시 활성화
+    	mousewheel: false,
+    	keyboard: {
+    		enabled: false,
+    	},
+    	simulateTouch :false,
+    });
+    //191212 추가 시작 이벤트 종료 후 삭제
