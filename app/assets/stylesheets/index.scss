@@ -1,4 +1,28 @@
+.wrapper{
+    /*背景色*/
+  background-color:#ecd6b4 ;
+    /*文字色*/
+  color:#38445a;
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+}
 
+a{
+  /*ナビゲーション文字色*/
+  color:#fff;  
+  &:hover{
+    color:#fff;
+  }
+}
+
+.navbar-brand{
+    /*ナビゲーション文字色*/
+    color:#fff;  
+}
 .navbar-brand{
   img{
     /*ヘッダーアイコンの画像*/
@@ -23,7 +47,7 @@
 }
 
 .footer{
-  background-color: #434a40;
+  background-color: #38445a;
   color: #fff;
   text-align: center;
 }
@@ -36,12 +60,77 @@
 }
 #page_top a {
   font-size: 3rem;
-  background-color: #999;
+  background-color: #38445a;
   color: #fff;
   text-align: center;
   padding: 15px 20px;
+  border-radius:50%;
 }
 #page_top a:hover {
   background-color: #666;
   text-decoration: none;
+}
+
+/*ナビゲーション*/
+/*枠線を消す*/
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,0);
+}
+
+/*モーダルの100%表示*/
+.fullscreen .modal-dialog {
+  margin: 0 0 0 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+}
+ 
+.fullscreen .modal-content {
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  background: rgba(36, 36, 36, 0.90);
+  overflow:auto;
+}
+ 
+.fullscreen .modal-content .modal-header{
+  border: 0px;
+}
+ 
+.fullscreen .modal-content button{
+  opacity: 1;
+}
+ 
+.fullscreen .modal-content button span{
+  color:#ecd6b4;
+  font-weight: 1;
+  font-size: 26px;
+  text-shadow: none;
+}
+ 
+.fullscreen .modal-body .modal-logo img {
+  width: 158px;
+  padding-bottom: 84px;
+}
+ 
+.fullscreen .modal-body ul {
+  padding: 0 0 0 0;
+}
+.fullscreen .modal-body li {
+  padding-bottom: 43px;
+}
+.fullscreen .modal-body a {
+  color:#fff;  
+  font-size: 16px;
+}
+ 
+.fullscreen .modal-body .social img {
+  width: 56px;
+  margin: 8px;
+}
+.modal-title{
+  color:#fff;
+  text-align: center;
 }
