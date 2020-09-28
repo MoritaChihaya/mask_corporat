@@ -1,0 +1,35 @@
+/ ナビゲーションバー
+%nav.navbar.navbar-expand-lg.d-flex.justify-content-between.fixed-top{style: "background-color: #38445a;"}
+  %a.navbar-brand{:href => "#"}
+    %span i-clap
+  .collapse.navbar-collapse.justify-content-end
+    %ul.navbar-nav
+      %li.nav-item.active
+        %a.nav-link{:href => "#"}
+          Top
+          %span.sr-only (current)
+      %li.nav-item
+        %a.nav-link{:href => "#"} About
+      %li.nav-item
+        %a.nav-link{:href => "#"} Products
+  %button.btn.btn-link.d-sm-none{"aria-label" => "Toggle navigation", "data-target" => "#menuModal", "data-toggle" => "modal", :type => "button"}
+    %span.navbar-toggler-icon
+/ モーダル
+#menuModal.modal.fade.fullscreen{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %h5.modal-title Modal title
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        %ul{:style => "list-style-type:none;"}
+          %li
+            %a{:href => "#"} Top
+          %li
+            %a{:href => "#"} About
+          %li
+            %a{:href => "#"} Products
+    / /.modal-content
+  / /.modal-dialog
+/ /.fullscreen
