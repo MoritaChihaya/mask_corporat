@@ -134,3 +134,17 @@ a{
   color:#fff;
   text-align: center;
 }
+
+/*モーダル表示時のロゴサイズ指定*/
+.modal-title.logo{
+  width: 50%;
+  height: auto;
+}
+
+/*top画像の位置指定*/
+.d-block{
+  padding-top: 122px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+

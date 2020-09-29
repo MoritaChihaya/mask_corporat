@@ -1,7 +1,7 @@
 / ナビゲーションバー
 %nav.navbar.navbar-expand-lg.d-flex.justify-content-between.fixed-top{style: "background-color: #38445a;"}
   %a.navbar-brand{:href => "#"}
-    %span i-clap
+    =image_tag "logo_w800_h240.png",class:'d-block.w-100 lozad'
   .collapse.navbar-collapse.justify-content-end
     %ul.navbar-nav
       %li.nav-item.active
@@ -19,7 +19,7 @@
   .modal-dialog
     .modal-content
       .modal-header
-        %h5.modal-title Modal title
+        =image_tag "logo_w800_h240.png",class:'modal-title logo'
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true"} ×
       .modal-body
