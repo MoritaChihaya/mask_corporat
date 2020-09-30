@@ -142,9 +142,62 @@ a{
 }
 
 /*top画像の位置指定*/
-.d-block{
+
+.top-box{
   padding-top: 122px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
+/*アイテムボックス*/
+.item-box{
+  clear: both;
+  overflow: hidden;
+  padding-right: 58px;
+  padding-left: 58px;
+  margin-bottom: 58px;
+/*アイテムイメージ*/
+  .top-image{
+  margin-bottom: 58px;
+  }
+/*テキストボックス*/
+  .text-box{
+    display: flex;
+    justify-content: space-between;
+/*ショップボタン*/
+    .shop-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50px;
+      color: #38445a;
+      transition: 0.5s ;
+      &:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        width: 150px;
+        height: 50px;
+        background-color: #38445a;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+    img { max-width: 100%; }
+}
