@@ -1,8 +1,66 @@
--#横長画像の配置
-.carousel-inner
-  .carousel-item.active
-    =image_tag "bg_sc10.png",class:'d-block w-100'
-.carousel-inner
-  .carousel-item.active
-    =image_tag "bg_sc10.png",class:'d-block w-100'
+/ メニューバー分の高さ調整
+.top-box
+/ アイテムボックス
+.item-box
+  =link_to "#" do
+    / アイテムイメージ
+    =image_tag "bg_sc10.png",class:'img-fluid top-image'
+  / テキストボックス
+  .text-box.text-justify
+    .fl
+      %h3.text-justify
+        COETIQA
+        %br
+        MOISTURE CLEARING
+      /*ショップボタン*/
+      =link_to "#",target:"_blank",class:"shop-btn" do
+        SHOP
+    .fr.pc
+      %h4.text-justify
+        지친 피부를 위한
+        %br>/
+        보습진정 즉각케어
+      %p.text-justify
+        코에티카 모이스처 클리어링 라인은 지속적인 마스크 착용과
+        %br>/
+        다양한 외부 환경 요소로 인하여 지친 피부에 보습과
+        %br>/
+        진정 효과를 주기 위한 에티카의 코스메틱 라인으로
+        %br>/
+        식물성 성분과 피부 보호 특허 성분이 함유되어
+        %br>/
+        편안한 피부 관리에 도움을 줍니다.
+.item-box
+  =link_to "#" do
+    / アイテムイメージ
+    =image_tag "bg_sc11.jpg",class:'img-fluid top-image'
+  / テキストボックス
+  .text-box.text-justify
+    .fl
+      %h3.text-justify
+        COETIQA
+        %br
+        MOISTURE CLEARING
+      %a.btn{:href => "https://smartstore.naver.com/etiqa/category/20347d9b4b1245198ed0b14e725d1853?cp=1", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'pc-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+    .fr.pc
+      %h4.text-justify
+        지친 피부를 위한
+        %br>/
+        보습진정 즉각케어
+      %p.text-justify
+        코에티카 모이스처 클리어링 라인은 지속적인 마스크 착용과
+        %br>/
+        다양한 외부 환경 요소로 인하여 지친 피부에 보습과
+        %br>/
+        진정 효과를 주기 위한 에티카의 코스메틱 라인으로
+        %br>/
+        식물성 성분과 피부 보호 특허 성분이 함유되어
+        %br>/
+        편안한 피부 관리에 도움을 줍니다.
 -#正方形画像の配置
+.carousel-inner
+  .carousel-item.active
+    =image_tag "img_inner.png",class:'d-block w-100'
+.carousel-inner
+  .carousel-item.active
+    =image_tag "img_softfit.jpg",class:'d-block w-100'
