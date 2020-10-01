@@ -141,55 +141,76 @@ a{
   height: auto;
 }
 
-/*top画像の位置指定*/
+.main{
+  /*top画像の位置指定*/
+    padding-top: 122px;
+    padding-right: 58px;
+    padding-left: 58px;
 
-.top-box{
-  padding-top: 122px;
-}
-
-/*アイテムボックス*/
-.item-box{
-  clear: both;
-  overflow: hidden;
-  padding-right: 58px;
-  padding-left: 58px;
-  margin-bottom: 58px;
-/*アイテムイメージ*/
-  .top-image{
-  margin-bottom: 58px;
-  }
-/*テキストボックス*/
-  .text-box{
-    display: flex;
-    justify-content: space-between;
-/*ショップボタン*/
-    .shop-btn{
+  /*アイテムボックス*/
+  .item-box{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 58px;
+  /*アイテムイメージ*/
+    .top-image{
+    margin-bottom: 58px;
+    }
+  /*テキストボックス*/
+    .text-box{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 150px;
-      height: 50px;
-      background-color: white;
-      border-radius: 50px;
-      color: #38445a;
-      transition: 0.5s ;
-      &:hover{
+      justify-content: space-between;
+  /*ショップボタン*/
+      .shop-btn{
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
         width: 150px;
         height: 50px;
-        background-color: #38445a;
+        background-color: white;
         border-radius: 50px;
-        color: white;
-        text-decoration: none;
+        color: #38445a;
+        transition: 0.5s ;
+        &:hover{
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          width: 150px;
+          height: 50px;
+          background-color: #38445a;
+          border-radius: 50px;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .square-box{
+    ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+      grid-row-gap: 58px;
+      grid-column-gap:58px;
+      list-style-type: none;
+    }
+    .square-image{
+      position: relative;
+      .image-o-text{
+        position: absolute;
+        top: 27px;
+        left: 40px;
       }
     }
   }
 }
 
-
-
+@media screen and (max-width: 800px) {
+  .parent {
+    flex-wrap: wrap;
+  }
+}
 
 /* パソコンで見たときは"pc"のclassがついた画像が表示される */
 .pc { display: block !important; }
