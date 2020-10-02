@@ -39,7 +39,9 @@
           COETIQA
           %br
           MOISTURE CLEARING
-        %a.btn{:href => "https://smartstore.naver.com/etiqa/category/20347d9b4b1245198ed0b14e725d1853?cp=1", :onclick => "gtag('event', 'click', {'event_category': 'gonavershop', 'event_label': 'pc-main'})", :target => "_blank", :title => "WHERE TO BUY"} SHOP
+        /*ショップボタン*/
+        =link_to "#",target:"_blank",class:"shop-btn" do
+          SHOP
       .fr.pc
         %h4.text-justify
           지친 피부를 위한
@@ -55,12 +57,13 @@
           식물성 성분과 피부 보호 특허 성분이 함유되어
           %br>/
           편안한 피부 관리에 도움을 줍니다.
+
   -#正方形画像の配置
   .square-box
     %ul
       %li.square-image
         =link_to "#" do
-          %h3.image-o-text
+          %h3.image-on-text
             COETIQA
             %br>/
             MOISTURE
@@ -69,7 +72,7 @@
           =image_tag "img_inner.png",class:'img-fluid top-image',width:"100%"
       %li.square-image
         =link_to "#" do
-          %h3.image-o-text
+          %h3.image-on-text
             COETIQA
             %br>/
             MOISTURE
@@ -78,7 +81,7 @@
           =image_tag "img_softfit.jpg",class:'img-fluid top-image',width:"100%"
       %li.square-image
         =link_to "#" do
-          %h3.image-o-text
+          %h3.image-on-text
             COETIQA
             %br>/
             MOISTURE
@@ -87,7 +90,7 @@
           =image_tag "img_inner.png",class:'img-fluid top-image',width:"100%"
       %li.square-image
         =link_to "#" do
-          %h3.image-o-text
+          %h3.image-on-text
             COETIQA
             %br>/
             MOISTURE

@@ -1,17 +1,5 @@
-.wrapper{
-    /*背景色*/
-  background-color:#ecd6b4 ;
-    /*文字色*/
-  color:#38445a;
-  font-family: "Helvetica Neue",
-  Arial,
-  "Hiragino Kaku Gothic ProN",
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif;
-}
 
-a{
+.nav-link{
   /*ナビゲーション文字色*/
   color:#fff;  
   &:hover{
@@ -141,66 +129,129 @@ a{
   height: auto;
 }
 
-.main{
-  /*top画像の位置指定*/
-    padding-top: 122px;
-    padding-right: 58px;
-    padding-left: 58px;
+.wrapper{
+    /*背景色*/
+  background-color:#ecd6b4 ;
+    /*文字色*/
+  color:#38445a;
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+  padding-right: 58px;
+  padding-left: 58px;
 
-  /*アイテムボックス*/
-  .item-box{
-    clear: both;
-    overflow: hidden;
-    margin-bottom: 58px;
-  /*アイテムイメージ*/
-    .top-image{
-    margin-bottom: 58px;
-    }
-  /*テキストボックス*/
-    .text-box{
-      display: flex;
-      justify-content: space-between;
-  /*ショップボタン*/
-      .shop-btn{
+  .main{
+    /*top画像の位置指定*/
+      padding-top: 122px;
+
+    /*アイテムボックス*/
+    .item-box{
+      clear: both;
+      overflow: hidden;
+      margin-bottom: 58px;
+    /*アイテムイメージ*/
+      .top-image{
+      margin-bottom: 58px;
+      }
+    /*テキストボックス*/
+      .text-box{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 50px;
-        background-color: white;
-        border-radius: 50px;
-        color: #38445a;
-        transition: 0.5s ;
-        &:hover{
+        justify-content: space-between;
+    /*ショップボタン*/
+        .shop-btn{
           display: flex;
           justify-content: center;
-          align-items: center;  
+          align-items: center;
           width: 150px;
           height: 50px;
-          background-color: #38445a;
+          background-color: white;
           border-radius: 50px;
-          color: white;
-          text-decoration: none;
+          color: #38445a;
+          transition: 0.5s ;
+          &:hover{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            width: 150px;
+            height: 50px;
+            background-color: #38445a;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .square-box{
+      ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        grid-row-gap: 58px;
+        grid-column-gap:58px;
+        list-style-type: none;
+      }
+      .square-image{
+        position: relative;
+        .image-on-text{
+          color:white;
+          position: absolute;
+          top: 27px;
+          left: 40px;
         }
       }
     }
   }
 
-  .square-box{
-    ul{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: 1fr;
-      grid-row-gap: 58px;
-      grid-column-gap:58px;
-      list-style-type: none;
+  footer{
+    padding-top: 200px;
+    padding-bottom: 60px;
+    .site-map{
+      padding: 70px 30px;
+      border-top: 5px solid #38445a;
+      display: flex;
+      dl{
+        margin-right: 150px;
+        dt{
+          margin-bottom: 17px;
+          font-size: 20px;
+        }
+        .dd_text{
+          font-size: 12px;
+          color: #38445a;
+          text-decoration: none;
+          font-weight: 700;
+        }
+      }
+      .multi-row{
+        margin-right: 70px;
+      }
     }
-    .square-image{
-      position: relative;
-      .image-o-text{
-        position: absolute;
-        top: 27px;
-        left: 40px;
+    .others{
+      padding: 70px 30px;
+      border-top: 5px solid #38445a;
+      border-bottom: 5px solid #38445a;
+      .sns{
+        display: flex;
+        margin-bottom: 18px;
+        &_text{
+          font-size: 12px;
+          color: #38445a;
+          text-decoration: none;
+          font-weight: 700;
+          margin-right: 20px;
+        }
+      }
+      .copyright{
+        font-size: 12px;
+        color: #38445a;
+        text-decoration: none;
+        font-weight: 700;
+        margin-right: 20px;
       }
     }
   }
