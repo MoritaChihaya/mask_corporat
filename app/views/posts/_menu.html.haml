@@ -1,35 +1,24 @@
-/ ナビゲーションバー
-%nav.navbar.navbar-expand-lg.d-flex.justify-content-between.fixed-top{style: "background-color: #38445a;"}
-  %a.navbar-brand{:href => "#"}
-    =image_tag "logo_w800_h240.png",class:'d-block.w-100 lozad'
-  .collapse.navbar-collapse.justify-content-end
-    %ul.navbar-nav
-      %li.nav-item.active
-        %a.nav-link{:href => "#"}
-          Top
-          %span.sr-only (current)
-      %li.nav-item
-        %a.nav-link{:href => "#"} About
-      %li.nav-item
-        %a.nav-link{:href => "#"} Products
-  %button.btn.btn-link.d-sm-none{"aria-label" => "Toggle navigation", "data-target" => "#menuModal", "data-toggle" => "modal", :type => "button"}
-    %span.navbar-toggler-icon
-/ モーダル
-#menuModal.modal.fade.fullscreen{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog
-    .modal-content
-      .modal-header
-        =image_tag "logo_w800_h240.png",class:'modal-title logo'
-        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-          %span{"aria-hidden" => "true"} ×
-      .modal-body
-        %ul{:style => "list-style-type:none;"}
-          %li
-            %a{:href => "#"} Top
-          %li
-            %a{:href => "#"} About
-          %li
-            %a{:href => "#"} Products
-    / /.modal-content
-  / /.modal-dialog
-/ /.fullscreen
+#header
+  =link_to "#" ,class:"icon" do
+    =image_tag "logo_w800_h240.png",class:'icon_image'
+  %p.btn-gnavi
+    %span
+    %span
+    %span
+  %nav#global-navi
+    %ul.menu
+      %li
+        =link_to "#",class:"menu-link" do
+          コンテンツ
+      %li
+        =link_to "#",class:"menu-link" do
+          コンテンツ
+      %li
+        =link_to "#",class:"menu-link" do
+          コンテンツ
+      %li
+        =link_to "#",class:"menu-link" do
+          コンテンツ
+      %li
+        =link_to "#",class:"menu-link" do
+          コンテンツ
