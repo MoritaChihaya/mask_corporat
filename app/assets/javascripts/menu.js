@@ -14,6 +14,6 @@ $(function(){
 
       $("#global-navi").stop().animate({
           right: rightVal
-      }, 200);
+      }, 500);
   });
 });
