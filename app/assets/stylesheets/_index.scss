@@ -15,7 +15,7 @@
 
 /* pc表示時のスタイル指定*/
 @media screen and (min-width: 501px) {
-.wrapper{  
+.wrapper{
   padding-right: 58px;
   padding-left: 58px;
   /*メニュー*/
@@ -31,7 +31,6 @@
       background:#333;
       font-size: 16px;
       box-sizing: border-box;
-      z-index: 2;
       ul {
         li {
           display:block;
@@ -44,12 +43,12 @@
       }
     }
     .btn-gnavi {
+      z-index: 10;
       position: fixed;
       top: 40px;
       right: 58px;
       width: 30px;
       height: 24px;
-      z-index: 3;
       box-sizing: border-box;
       cursor: pointer;
       -webkit-transition: all 600ms;
@@ -82,6 +81,7 @@
       }
     }
     .icon{
+      z-index: 10;
       position: fixed;
       top: 40px;
       left: 58px;
@@ -165,7 +165,7 @@
         grid-column-gap:58px;
         list-style-type: none;
       }
-      .square-image{
+      .square-item{
         position: relative;
         .image-on-text{
           color:white;
@@ -258,7 +258,6 @@
           background:#333;
           font-size: 16px;
           box-sizing: border-box;
-          z-index: 2;
           ul {
             li {
               display:block;
@@ -272,11 +271,11 @@
         }
         /*メニュー（ハンバーガーメニュー）*/
         .btn-gnavi {
+          z-index: 10;
           position: fixed;
           top: 20px;
           right: calc(100% - 322px);
           height: 24px;
-          z-index: 3;
           box-sizing: border-box;
           cursor: pointer;
           -webkit-transition: all 600ms;
@@ -309,6 +308,7 @@
           }
         }
         .icon{
+          z-index: 10;
           position: fixed;
           top: 20px;
           cursor: pointer;
@@ -396,7 +396,7 @@
           grid-column-gap:58px;
           list-style-type: none;
         }
-        .square-image{
+        .square-item{
           position: relative;
           .image-on-text{
             color:white;
