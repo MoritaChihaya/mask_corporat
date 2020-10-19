@@ -6,19 +6,16 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  ruby '2.5.1'
 
-* System dependencies
+* why
+このサイトは以下のサイトを元に学習のためコピーしたもの
+https://www.etiqa.co.kr/
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* what
+以下のコード実装を本サイトを通じて行った
+・lazyload.js（画像読み込みを遅らせることで読み込み速度を上げる）
+・bootstrap
+・レスポンシブ対応（_index.scss内のメディアクエリにて対応）
+・右下のtopボタン（top_button.js＋index.html.haml内の記述）
+・ハンバーガーメニュー（menu.html.haml＋menu.js内の記述）
